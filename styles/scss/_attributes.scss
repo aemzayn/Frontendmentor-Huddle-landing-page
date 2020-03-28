@@ -1,0 +1,74 @@
+$primary-pink: 	#ff52bf;
+$pale-cyan: #ebfbff;
+$dark-cyan: #00252e;
+
+@mixin footer-contact-image {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    h1, h2, h3 {
+        font-family: "Poppins", sans-serif;
+    }
+
+    h4 {
+        font-weight: 400;
+    }
+
+    h4 , p, small, a {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    footer {
+        .footer-logo {
+            filter: brightness(0) invert(1);
+        }
+        small, p, a {
+            color: white;
+            text-decoration: none;
+        }
+        img, i {
+            fill: white;
+            color: white;
+        }
+    }
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px 80px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #edfbfe80;
+    height: 100vh;
+    padding: 0 150px;
+}
